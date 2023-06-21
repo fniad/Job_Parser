@@ -1,0 +1,162 @@
+[
+    {
+        "name": "программист php",
+        "url": "https://hh.ru/vacancy/82105922",
+        "salary_from": 35000,
+        "salary_to": 65000,
+        "currency": "RUR",
+        "description": "Знания <highlighttext>PHP</highlighttext> 5/<highlighttext>PHP</highlighttext> 7. MySQL. Понимание принципов ООП. HTML. CSS. JavaScript."
+    },
+    {
+        "name": "php разработчик (junior/стажер) в команду kommo",
+        "url": "https://hh.ru/vacancy/77912963",
+        "salary_from": "По договорённости",
+        "salary_to": "",
+        "currency": "",
+        "description": "Знание <highlighttext>PHP</highlighttext> (мы используем версии от 7.1 до 8). Понимание принципов ООП. Знание основ MySQL. Знание основ Git. "
+    },
+    {
+        "name": "senior backend developer (php)",
+        "url": "https://hh.ru/vacancy/80928389",
+        "salary_from": 250000,
+        "salary_to": 350000,
+        "currency": "RUR",
+        "description": "Законченное высшее образование по специальности информационные технологии или автоматизированные системы управления. Знание языков программирования <highlighttext>PHP</highlighttext>, MySQL, JavaScript. Стаж работы в..."
+    },
+    {
+        "name": "программист php (junior)",
+        "url": "https://hh.ru/vacancy/80012713",
+        "salary_from": 35000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Можно без опыта работы. Хорошая теоретическая подготовка. Знание <highlighttext>PHP</highlighttext>, JavaScript, HTML/CSS, AJAX, jQuery, MySQL. Понимание принципов работы web-технологий. "
+    },
+    {
+        "name": "веб-разработчик (laravel)",
+        "url": "https://hh.ru/vacancy/81941501",
+        "salary_from": 290000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт разработки от 3-х лет. Знание <highlighttext>PHP</highlighttext> версии 7. Опыт работы с одним из MVC-фреймворков: желательно - Laravel (или..."
+    },
+    {
+        "name": "php разработчик",
+        "url": "https://hh.ru/vacancy/81057390",
+        "salary_from": 100000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Понимание и опыт использования принципов ООП. Желателен опыт работы с <highlighttext>PHP</highlighttext> (7.3+). Опыт работы с Yii2. "
+    },
+    {
+        "name": "стажер-программист php/битрикс (удаленно)",
+        "url": "https://hh.ru/vacancy/82191429",
+        "salary_from": 70000,
+        "salary_to": 100000,
+        "currency": "RUR",
+        "description": "Опыт разработки на <highlighttext>PHP</highlighttext> от 1 года. Базовые знания HTML, JS, CSS. Базовые знания SQL (желательно умение свободно писать протые..."
+    },
+    {
+        "name": "php программист laravel",
+        "url": "https://hh.ru/vacancy/82156720",
+        "salary_from": 250000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт работы на <highlighttext>PHP</highlighttext> от 3х лет. Опыт работы с Laravel от 2х лет. Знание и понимание ООП..."
+    },
+    {
+        "name": "web-разработчик",
+        "url": "https://hh.ru/vacancy/81720926",
+        "salary_from": 200000,
+        "salary_to": 400000,
+        "currency": "RUR",
+        "description": "Твои знания и умения: Опыт работы с: С\\C++, Rust, Go, Python, Clojure, ФП, Sphinx, Memcache, RabbitMQ, Redis. "
+    },
+    {
+        "name": "php developer (laravel)",
+        "url": "https://hh.ru/vacancy/82058649",
+        "salary_from": "По договорённости",
+        "salary_to": "",
+        "currency": "",
+        "description": "Знание <highlighttext>PHP</highlighttext>7+, опыт работы с MySQL 5.6+. Опыт разработки с использованием Laravel/опыт работы с другими..."
+    },
+    {
+        "name": "php developer (highload)",
+        "url": "https://hh.ru/vacancy/81383681",
+        "salary_from": 200000,
+        "salary_to": 500000,
+        "currency": "RUR",
+        "description": "Отличное знание <highlighttext>PHP</highlighttext> 7 от 3-х лет (важно умение программировать, а не только знание фреймворков). Хорошее знание MySQL..."
+    },
+    {
+        "name": "laravel разработчик",
+        "url": "https://hh.ru/vacancy/82100372",
+        "salary_from": 50000,
+        "salary_to": 120000,
+        "currency": "RUR",
+        "description": "Доступность для решения клиентских задач с 9 до 18 по Москве. Отличные знания <highlighttext>php</highlighttext>, postgresql. Умение писать \"чистый код\" и..."
+    },
+    {
+        "name": "php-разработчик",
+        "url": "https://hh.ru/vacancy/79933343",
+        "salary_from": 120000,
+        "salary_to": 220000,
+        "currency": "RUR",
+        "description": "Уверенные знания <highlighttext>PHP</highlighttext> (7.4-8.2, Yii2). Понимания принципов взаимодействия API. Уверенные знания и опыт работы с MySQL..."
+    },
+    {
+        "name": "junior+ / middle разработчик php",
+        "url": "https://hh.ru/vacancy/80742139",
+        "salary_from": 40000,
+        "salary_to": 90000,
+        "currency": "RUR",
+        "description": "На собеседовании кандидату желательно похвастаться: Пониманием принципов построения клиент-серверных приложений. Работой в *nix системах (настройка, подстройка виртуальных серверов). "
+    },
+    {
+        "name": "php-программист",
+        "url": "https://hh.ru/vacancy/81941612",
+        "salary_from": 50000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Знание <highlighttext>PHP</highlighttext>, HTML, CSS, JavaScript, SQL, TWIG. Знание ООП, MVC. Навыки работы с чужим кодом. Ответственность. Умение работать в коллективе. "
+    },
+    {
+        "name": "php - разработчик (back-end developer)",
+        "url": "https://hh.ru/vacancy/81641048",
+        "salary_from": 40000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "уверенные знания <highlighttext>PHP</highlighttext>. - опыт работы с MVC фреймворками (Yii, Laravel). - понимание принципов построения REST API. - понимание построение архитектуры баз данных..."
+    },
+    {
+        "name": "php разработчик (junior+ / middle php backend developer) в команду основного продукта",
+        "url": "https://hh.ru/vacancy/80368981",
+        "salary_from": 3500000,
+        "salary_to": 15000000,
+        "currency": "UZS",
+        "description": "Опыт работы <highlighttext>PHP</highlighttext> разработчиком от 3 месяцев. Опыт работы с MySQL. Базовый уровень HTML/CSS/JavaScript. Опыт работы с Git. "
+    },
+    {
+        "name": "разработчик php (middle)",
+        "url": "https://hh.ru/vacancy/81415014",
+        "salary_from": 100000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Базовые знания <highlighttext>PHP</highlighttext> 7.x. Понимание принципов MVC в программировании. Опыт работы с популярными <highlighttext>PHP</highlighttext> фреймворками. Знания SQL, JavaScript, CSS..."
+    },
+    {
+        "name": "php-разработчик",
+        "url": "https://hh.ru/vacancy/80896934",
+        "salary_from": 200000,
+        "salary_to": 300000,
+        "currency": "RUR",
+        "description": "Важно на отличном уровне знать: <highlighttext>PHP</highlighttext>, Yii (опыт работы от 3 лет), MySQL, JavaScript и тд. Знать и понимать: паттерны..."
+    },
+    {
+        "name": "стажер-разработчик php",
+        "url": "https://hh.ru/vacancy/80231559",
+        "salary_from": 15000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Наши ожидания: Знания основ Backend-разработки. Базовые знания <highlighttext>PHP</highlighttext> и хотя бы одного фреймворка. Опыт работы с беком, некоммерческий, возможно..."
+    }
+]
