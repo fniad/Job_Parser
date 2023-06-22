@@ -1,18 +1,12 @@
-from src.utils import sort_vacancies, get_top_vacancies, print_vacancies, \
-    filter_vacancies
 from src.vacancy_api import SuperJobAPI, HeadHunterAPI
-
-# # json_saver.get_vacancies_by_salary("100 000-150 000 руб.")
-# json_saver.delete_vacancy(vacancy)
+from src.vacancy_storage import JSONVacancyStorage
 
 
 # Функция для взаимодействия с пользователем
 def main():
     platforms = ["HeadHunter", "SuperJob"]
     platform = None
-    sj_vacancies = None
-    hh_vacancies = None
-    filtered_vacancies = None
+    vacancies_in_json = []
 
     # Выбор пользователем платформы
     try:
@@ -47,28 +41,39 @@ def main():
         # Получение от пользователя запроса
         keyword = input("Введите ключевое слово для поиска.\n"
                         "Например, 'Python'\n").lower()
+        try:
+            page_count = int(input("Введите количество страниц, с которых хотите получить результат: "))
+        except ValueError:
+            print("начение должно быть числом.")
+            page_count = int(input("Введите количество страниц, с которых хотите получить результат: "))
 
         # Получение вакансий с разных платформ
+        hh = HeadHunterAPI(keyword)
+        sj = SuperJobAPI(keyword)
         if platform == "HeadHunter":
-            hh_vacancies = HeadHunterAPI(keyword).get_vacancies()
-            filtered_vacancies = filter_vacancies(hh_vacancies, keyword)
+            hh.get_vacancies(page_count)
+            vacancies_in_json.extend(hh.get_formatted_vacancies())
         elif platform == "SuperJob":
-            sj_vacancies = SuperJobAPI(keyword).get_vacancies()
-            filtered_vacancies = filter_vacancies(sj_vacancies, keyword)
+            sj.get_vacancies(page_count)
+            vacancies_in_json.extend(sj.get_formatted_vacancies())
         elif platform == platforms:
-            vacancies_json = sj_vacancies + hh_vacancies    # не складывается Х(
-            filtered_vacancies = filter_vacancies(vacancies_json, keyword)
+            for api in (hh, sj):
+                api.get_vacancies(page_count)
+                vacancies_in_json.extend(api.get_formatted_vacancies())
 
-        print(f'Найдено {len(filtered_vacancies)} вакансий.')
-        top_n = int(input("Введите количество вакансий для вывода в топ N, числом: "))
+        vacancies = JSONVacancyStorage(keyword, vacancies_in_json)
+        vacancies.add_vacancy()
+        filter_vacancies = vacancies.filter_vacancies()
+        print(f'\nВсего вакансий выгружено:{len(filter_vacancies)}')
+        top_n = int(input("Введите количество вакансий для вывода в топ N по зарплате, числом: "))
 
-        if not filtered_vacancies:
+        if not filter_vacancies:
             print("Нет вакансий, соответствующих заданным критериям.")
             return
 
-        sorted_vacancies = sort_vacancies(filtered_vacancies)
-        top_vacancies = get_top_vacancies(sorted_vacancies, top_n)
-        print_vacancies(top_vacancies)
+        vacancies.sort_by_salary_from()
+        vacancies.get_top_vacancies(top_n)
+        vacancies.print_vacancies()
 
 
 main()
