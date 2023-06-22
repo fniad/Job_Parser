@@ -13,18 +13,3 @@ class Vacancy:
 
     def __repr__(self):
         return f"Вакансия (название = '{self.name}', зп = '{self.salary_from}' - {self.salary_to} {self.currency})"
-
-    # def __eq__(self, other):
-    #     return self.salary_to == other.salary_to
-    #
-    # def __lt__(self, other):
-    #     return self.salary_to < other.salary_tp
-    #
-    # def __le__(self, other):
-    #     return self.salary_to <= other.salary_to
-    #
-    # def __gt__(self, other):
-    #     return self.salary_to > other.salary_to
-    #
-    # def __ge__(self, other):
-    #     return self.salary_to >= other.salary_to
