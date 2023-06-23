@@ -13,6 +13,10 @@ class VacancyStorage(ABC):
     def add_vacancy(self):
         pass
 
+    @abstractmethod
+    def del_vacancy(self):
+        pass
+
 
 class JSONVacancyStorage(VacancyStorage):
 
@@ -37,3 +41,8 @@ class JSONVacancyStorage(VacancyStorage):
                                   vacancy["currency"], vacancy["description"])
             self.vacancy_list.append(new_vacancy)
         return self.vacancy_list
+
+    def del_vacancy(self):
+        """Очистит от вакансий файл JSON"""
+        with open(self.filename, 'w') as file:
+            json.dump('', file, indent=4, ensure_ascii=False)
