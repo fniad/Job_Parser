@@ -1,7 +1,10 @@
 from abc import ABC, abstractmethod
 from configparser import ParsingError
 import requests
-from os import getenv
+import os
+from dotenv import load_dotenv
+
+load_dotenv('.env')
 
 
 class VacancyAPI(ABC):
@@ -91,8 +94,8 @@ class SuperJobAPI(VacancyAPI):
             'archive': False,
             'agreement': False
         }
-        self.secret_key: str = getenv('SECRET_KEY_SJ',
-                                      'v3.r.122993083.0a5f72aa9f17292590a9f67f83232425af144c3a.7f4c5ad671b9f5286c5c2cbf3c771ed31d6c817e')
+        self.secret_key: str = os.getenv('SECRET_KEY_SJ',
+                                         'v3.r.122993083.0a5f72aa9f17292590a9f67f83232425af144c3a.7f4c5ad671b9f5286c5c2cbf3c771ed31d6c817e')
         self.headers = {'X-Api-App-Id': self.secret_key}
         self.keyword = keyword
         self.vacancies = []
