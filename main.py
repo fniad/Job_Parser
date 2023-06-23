@@ -1,5 +1,8 @@
 from src.vacancy_api import SuperJobAPI, HeadHunterAPI
 from src.vacancy_storage import JSONVacancyStorage
+from src.utils import filter_vacancies, sort_by_salary_from, get_top_vacancies, print_vacancies
+from os import getenv
+from dotenv import load_dotenv
 
 
 # Функция для взаимодействия с пользователем
@@ -62,18 +65,17 @@ def main():
                 vacancies_in_json.extend(api.get_formatted_vacancies())
 
         vacancies = JSONVacancyStorage(keyword, vacancies_in_json)
-        vacancies.add_vacancy()
-        filter_vacancies = vacancies.filter_vacancies()
-        print(f'\nВсего вакансий выгружено:{len(filter_vacancies)}')
+        filter_vac = filter_vacancies(vacancies.add_vacancy())
+        print(f'\nВсего вакансий выгружено:{len(filter_vac)}')
         top_n = int(input("Введите количество вакансий для вывода в топ N по зарплате, числом: "))
 
-        if not filter_vacancies:
+        if not filter_vac:
             print("Нет вакансий, соответствующих заданным критериям.")
             return
 
-        vacancies.sort_by_salary_from()
-        vacancies.get_top_vacancies(top_n)
-        vacancies.print_vacancies()
+        sorted_vac = sort_by_salary_from(filter_vac)
+        top_vac = get_top_vacancies(sorted_vac, top_n)
+        print_vacancies(top_vac)
 
 
 main()
