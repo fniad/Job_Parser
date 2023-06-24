@@ -33,7 +33,7 @@ class JSONVacancyStorage(VacancyStorage):
 
     def add_vacancy(self):
         """Добавляет вакансии как экземпляры класса Вакансия"""
-        with open(self.filename, 'r', encoding='utf-8') as file:
+        with open(self.filename, 'r') as file:
             vacancies = json.load(file)
 
         for vacancy in vacancies:
