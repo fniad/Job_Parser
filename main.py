@@ -1,8 +1,6 @@
 from src.vacancy_api import SuperJobAPI, HeadHunterAPI
 from src.vacancy_storage import JSONVacancyStorage
 from src.utils import filter_vacancies, sort_by_salary_from, get_top_vacancies, print_vacancies
-from os import getenv
-from dotenv import load_dotenv
 
 
 # Функция для взаимодействия с пользователем
@@ -42,8 +40,8 @@ def main():
             print(f"Вы выбрали обе платформы: HeadHunter и SuperJob")
 
         # Получение от пользователя запроса
-        keyword = input("Введите ключевое слово для поиска.\n"
-                        "Например, 'Python'\n").lower()
+        keyword = input("Введите ключевые слова для поиска через пробел.\n"
+                        "Например, 'Python' или 'Python JavaScript'\n").lower()
         try:
             page_count = int(input("Введите количество страниц, с которых хотите получить результат: "))
         except ValueError:
