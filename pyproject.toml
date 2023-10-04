@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "job_parser"
+version = "0.1.0"
+description = ""
+authors = ["fniad <artkamproject@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
